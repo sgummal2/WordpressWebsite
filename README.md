@@ -1,5 +1,5 @@
 # WordpressWebsite
-Link: https://www.cloudnotesforfree.com/  Deployed and hosted a highly-available WordPress website called cloudnotesforfree on AWS using EC2, RDS, Route 53, ASG, and VPC.
+Link: https://www.cloudnotesforfree.com  Deployed and hosted a highly-available WordPress website called cloudnotesforfree on AWS using EC2, RDS, Route 53, ASG, and VPC.
 
 Steps used to deploy WordPress website On AWS:
 - Built a Three-Tier AWS Network VPC from Scratch
