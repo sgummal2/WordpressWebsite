@@ -16,3 +16,7 @@ Steps used to deploy WordPress website On AWS:
 - Created an HTTPS Listener for the Application Load Balancer
 - Created an Auto Scaling Group
 - Installed WordPress Theme and Template
+
+
+Images:
+<img width="960" alt="1" src="https://github.com/sgummal2/WordpressWebsite/assets/140002588/2c30a6a8-0406-4b67-87b6-c9e1056bbec9">
