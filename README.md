@@ -4,7 +4,7 @@ Deployed and hosted a highly-available WordPress website called cloudnotesforfre
 Reference Architecture: 
 ![1_WordPress_Project_Reference_Architecture](https://github.com/sgummal2/WordpressWebsite/assets/140002588/80924ba1-2fe5-4c84-932e-b02ae5070246)
 
-/**Here's a breakdown of the key components and concepts involved:**
+#**Here's a breakdown of the key components and concepts involved:**
 
 •	**VPC with Public and Private Subnets**: Creating a Virtual Private Cloud (VPC) with public and private subnets in multiple availability zones ensures network isolation and availability.
 
