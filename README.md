@@ -5,29 +5,18 @@ Reference Architecture:
 ![1_WordPress_Project_Reference_Architecture](https://github.com/sgummal2/WordpressWebsite/assets/140002588/80924ba1-2fe5-4c84-932e-b02ae5070246)
 
 Here's a breakdown of the key components and concepts involved:
--VPC with Public and Private Subnets: Creating a Virtual Private Cloud (VPC) with public and private subnets in multiple availability zones ensures network isolation and availability.
-
--Internet Gateway: Facilitates communication between instances within the VPC and the internet.
-
--Availability Zones: Using multiple availability zones enhances high availability and fault tolerance by distributing resources across different physical data centers.
-
--Nat Gateway and Bastion Host: These resources provide secure access to instances in private subnets and allow outbound internet connectivity for those instances.
-
--Resources Placement: Placing web servers and database servers in private subnets enhances security by limiting direct exposure to the internet.
-
--MySQL RDS Database: Amazon RDS provides a managed relational database service that supports the WordPress application.
-
--Amazon EFS: Using Amazon Elastic File System (EFS) allows shared file storage for web servers.
-
--EFS Mount Targets: EFS mount targets in each AZ provide access to the shared file storage.
-
--EC2 Instances: Hosting the website on EC2 instances allows you to customize the environment to suit your needs.
-
--Application Load Balancer: Distributes incoming web traffic across an Auto Scaling Group of EC2 instances for load balancing and fault tolerance.
-
--Auto Scaling Group: Creates and manages a dynamic group of EC2 instances to automatically adjust capacity based on demand.
-
--Route 53: Amazon Route 53 is used to register the domain name and create DNS records for routing traffic to the website.
+•	VPC with Public and Private Subnets: Creating a Virtual Private Cloud (VPC) with public and private subnets in multiple availability zones ensures network isolation and availability.
+•	Internet Gateway: Facilitates communication between instances within the VPC and the internet.
+•	Availability Zones: Using multiple availability zones enhances high availability and fault tolerance by distributing resources across different physical data centers.
+•	Nat Gateway and Bastion Host: These resources provide secure access to instances in private subnets and allow outbound internet connectivity for those instances.
+•	Resources Placement: Placing web servers and database servers in private subnets enhances security by limiting direct exposure to the internet.
+•	MySQL RDS Database: Amazon RDS provides a managed relational database service that supports the WordPress application.
+•	Amazon EFS: Using Amazon Elastic File System (EFS) allows shared file storage for web servers.
+•	EFS Mount Targets: EFS mount targets in each AZ provide access to the shared file storage.
+•	EC2 Instances: Hosting the website on EC2 instances allows you to customize the environment to suit your needs.
+•	Application Load Balancer: Distributes incoming web traffic across an Auto Scaling Group of EC2 instances for load balancing and fault tolerance.
+•	Auto Scaling Group: Creates and manages a dynamic group of EC2 instances to automatically adjust capacity based on demand.
+•	Route 53: Amazon Route 53 is used to register the domain name and create DNS records for routing traffic to the website.
 
 Steps used to deploy WordPress website On AWS:
 - Built a Three-Tier AWS Network VPC from Scratch
