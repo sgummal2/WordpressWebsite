@@ -11,8 +11,8 @@ Reference Architecture:
 
 •	Internet Gateway: Facilitates communication between instances within the VPC and the internet.
 
-•	Availability Zones: Using multiple availability zones enhances high availability and fault tolerance by distributing resources across different 
-   physical data centers.
+•	Availability Zones: Using multiple availability zones enhances high availability and fault tolerance by distributing resources across 
+   different physical data centers.
 
 •	Nat Gateway and Bastion Host: These resources provide secure access to instances in private subnets and allow outbound internet connectivity 
    for those instances.
