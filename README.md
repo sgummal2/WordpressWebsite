@@ -4,6 +4,32 @@ Deployed and hosted a highly-available WordPress website called cloudnotesforfre
 Reference Architecture: 
 ![1_WordPress_Project_Reference_Architecture](https://github.com/sgummal2/WordpressWebsite/assets/140002588/80924ba1-2fe5-4c84-932e-b02ae5070246)
 
+1. VPC with public and private subnets in 2 availability zones.
+
+2. An Internet Gateway is used to allow communication between instances in VPC and the Internet.
+
+3. We are using 2 Availability Zones for high availability and fault tolerance.
+
+4. Resources such as Nat Gateway, Bastion Host, and Application Load Balancer uses Public Subnets.
+
+5. We will put the webservers and database servers in the Private Subnets to protect them.
+
+6. The Nat Gateway allows the instances in the private App subnets and private Data subnets to access the internet.
+
+7. We are using an MYSQL RDS database.
+
+8 We are using Amazon EFS so that the webservers can have access to shared files.
+
+9. The EFS Mount Targets are in each AZ in the VPC.
+
+10. We are using EC2 Instances to host our website.
+
+11. Application Load Balancer is used to distribute web traffic across an Auto Scaling Group of EC2 instances in multiple AZS.
+
+12. Using Auto Scaling Group to dynamically create our EC2 instances to make our website highly available scalable, fault-tolerant, and elastic.
+
+13. We are using Route 53 to register our Domain name and create a record set.  
+
 ## **Here's a breakdown of the key components and concepts involved:**
 
 •	**VPC with Public and Private Subnets**: Creating a Virtual Private Cloud (VPC) with public and private subnets in multiple availability zones ensures network isolation and availability.
