@@ -7,15 +7,15 @@ Reference Architecture:
 **Here's a breakdown of the key components and concepts involved:**
 
 •	VPC with Public and Private Subnets: Creating a Virtual Private Cloud (VPC) with public and private subnets in multiple availability zones    
-  ensures network isolation and availability.
+   ensures network isolation and availability.
 
 •	Internet Gateway: Facilitates communication between instances within the VPC and the internet.
 
 •	Availability Zones: Using multiple availability zones enhances high availability and fault tolerance by distributing resources across different 
-  physical data centers.
+   physical data centers.
 
 •	Nat Gateway and Bastion Host: These resources provide secure access to instances in private subnets and allow outbound internet connectivity 
-  for those instances.
+   for those instances.
 
 •	Resources Placement: Placing web servers and database servers in private subnets enhances security by limiting direct exposure to the internet.
 
@@ -28,7 +28,7 @@ Reference Architecture:
 •	EC2 Instances: Hosting the website on EC2 instances allows you to customize the environment to suit your needs.
 
 •	Application Load Balancer: Distributes incoming web traffic across an Auto Scaling Group of EC2 instances for load balancing and fault 
-  tolerance.
+   tolerance.
 
 •	Auto Scaling Group: Creates and manages a dynamic group of EC2 instances to automatically adjust capacity based on demand.
 
