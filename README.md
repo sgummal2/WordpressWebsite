@@ -34,6 +34,7 @@ Here's a breakdown of the key components and concepts involved:
 
 •	Route 53: Amazon Route 53 is used to register the domain name and create DNS records for routing traffic to the website.
 
+
 Steps used to deploy WordPress website On AWS:
 
 •	Created an Application Load Balancer
